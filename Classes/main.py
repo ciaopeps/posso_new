@@ -4,7 +4,23 @@ import random
 from Classes.MakeStory import MakeStory
 from Classes.globals import *
 
+
+import random
+import string
+
+def get_random_string(length):
+    letters = string.ascii_lowercase
+    result_str = ''.join(random.choice(letters) for i in range(length))
+    return result_str
+# get_random_string(8)
+# get_random_string(8)
+# get_random_string(6)
+
+
 def send_story():
+    # article_title = get_random_string(8)
+    # article_text = get_random_string(200)
+    # return article_title,article_text
     print('starting making a story-------------------------------------------')
     ms = MakeStory()
     articles = []
