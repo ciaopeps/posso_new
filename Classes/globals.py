@@ -9,11 +9,6 @@ global TITLE
 global ARTICLE
 global D
 
-from google.cloud import storage
-import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="possoai-a49d728da500.json"
-client = storage.Client()
-bucket = client.get_bucket('models_possoai')
 
 MODEL_CONFIG_FN = 'grover/lm/configs/mega.json'
 MODEL_CKPT = 'grover/models/mega/model.ckpt'
