@@ -17,11 +17,9 @@ def home():
     k = D
     return render_template('home-page_demo.html',d=k)
 
-#if __name__ == '__main__':
+
+# if __name__ == '__main__':
 #    app.run(debug=True)
-
-
-
 
 
 
