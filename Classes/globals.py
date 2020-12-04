@@ -53,4 +53,4 @@ DOMAIN_STYLE_TO_COPY = 'www.ft.com'
 
 TITLE = []
 ARTICLE = []
-DATE = {}
+DATE = []
