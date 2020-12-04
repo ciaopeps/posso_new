@@ -1,5 +1,6 @@
 from Classes.main import *
 from Classes.globals import *
+import random
 import os
 import requests
 # import argparse
@@ -7,8 +8,12 @@ import requests
 def to_app():
     print('to app')
     title, article = send_story()
-    D[title] = article
-
+    i = random.randint(1, 11)
+    image = "static/img/home/home" + str(i) + ".jpg"
+    IMAGE_TO_SLANDER.append(image)
+    TITLE.append(title)
+    ARTICLE.append(article)
+    # D[title] = article
 # def load_model():
 #
 #

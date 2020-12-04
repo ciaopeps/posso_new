@@ -7,13 +7,15 @@ global MODEL_CONFIG_FN
 global MODEL_CKPT
 global TITLE
 global ARTICLE
-global D
+global IMAGE
+
 
 
 MODEL_CONFIG_FN = 'grover/lm/configs/mega.json'
 MODEL_CKPT = 'grover/models/mega/model.ckpt'
 NAME_TO_SLANDER = (names.get_full_name())
-IMAGE_TO_SLANDER = "https://thispersondoesnotexist.com/image"
+# random.randint(a, b)
+IMAGE_TO_SLANDER = []
 SLANDEROUS_SEED_HEADLINES = [
   f"{NAME_TO_SLANDER} convicted of stealing puppies",
   f"{NAME_TO_SLANDER} caught lying about growing the world's largest watermelon",
