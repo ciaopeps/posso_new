@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 scheduler = BackgroundScheduler()
 scheduler.add_job(func=to_app, trigger='interval', hours=3, start_date='2020-12-04 09:05:00', end_date='2100-06-15 09:05:00')
-scheduler.add_job(func=to_app, trigger='interval', hours=3, start_date='2020-12-04 08:52:01', end_date='2100-06-15 11:00:00')
+scheduler.add_job(func=to_app, trigger='interval', hours=3, start_date='2020-12-04 08:05:01', end_date='2100-06-15 11:00:00')
 
 scheduler.start()
 
