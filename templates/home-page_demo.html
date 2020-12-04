@@ -82,7 +82,7 @@
 
       <!--Section: Jumbotron-->
             <!--Excerpt-->
-            {% for t, v, i, d in zip(title,article,image,date) | reverse %}
+            {% for t, a, i, d in published | reverse %}
             {% if loop.index0 is divisibleby 2 %}
       <hr class="my-5">
 

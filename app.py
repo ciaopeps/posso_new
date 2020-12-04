@@ -15,17 +15,17 @@ scheduler.start()
 @app.route('/')
 def home():
 
-    return render_template('home-page_demo.html',title=TITLE,article=ARTICLE,image=IMAGE_TO_SLANDER,date=DATE)
+    return render_template('home-page_demo.html',type=type,published = zip(TITLE,ARTICLE,IMAGE_TO_SLANDER,DATE))
 
 @app.template_global(name='zip')
 def _zip(*args, **kwargs): #to not overwrite builtin zip in globals
     return __builtins__.zip(*args, **kwargs)
 
 
-if __name__ == '__main__':
-    # to_app()
-    # to_app()
-    app.run(debug=True)
-
-
+# if __name__ == '__main__':
+#     # to_app()
+#     # to_app()
+#     app.run(debug=True)
+#
+#
 
