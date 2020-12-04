@@ -82,7 +82,7 @@
 
       <!--Section: Jumbotron-->
             <!--Excerpt-->
-            {% for key, value, image, date in zip(t,a,i,d) | reverse %}
+            {% for t, v, i, d in zip(title,article,image,date) | reverse %}
             {% if loop.index0 is divisibleby 2 %}
       <hr class="my-5">
 
@@ -100,7 +100,7 @@
 
             <!--Image-->
             <div class="view overlay rounded z-depth-1-half mb-3">
-              <img src={{image}} class="img-fluid" alt="Sample post image">
+              <img src={{i}} class="img-fluid" alt="Sample post image">
               <a>
                 <div class="mask rgba-white-slight waves-effect waves-light"></div>
               </a>
@@ -112,15 +112,15 @@
 
               <p>
                 <strong>
-                  <i class="far fa-clock"></i> {{date}} </strong>
+                  <i class="far fa-clock"></i> {{d}} </strong>
               </p>
             </div>
             <h3>
               <a>
-                <strong style="text-align:justify">{{ key }}</strong>
+                <strong style="text-align:justify">{{ t }}</strong>
               </a>
             </h3>
-            <p style="text-align:justify">{{ value }}</p>
+            <p style="text-align:justify">{{ a }}</p>
 
             <!--/Featured news-->
 
@@ -156,7 +156,7 @@
 
             <!--Image-->
             <div class="view overlay rounded z-depth-1-half mb-3">
-              <img src= {{image}} class="img-fluid" alt="Sample post image">
+              <img src= {{i}} class="img-fluid" alt="Sample post image">
               <a>
                 <div class="mask rgba-white-slight waves-effect waves-light"></div>
               </a>
@@ -172,15 +172,15 @@
               </a>
               <p>
                 <strong>
-                  <i class="far fa-clock"></i>{{date}}</strong>
+                  <i class="far fa-clock"></i>{{d}}</strong>
               </p>
             </div>
             <h3>
               <a>
-                <strong style="text-align:justify"> {{ key }}</strong>
+                <strong style="text-align:justify"> {{ t }}</strong>
               </a>
             </h3>
-            <p style="text-align:justify">{{ value }}</p>
+            <p style="text-align:justify">{{ a }}</p>
     {% endif %}
     {% endfor %}
 
