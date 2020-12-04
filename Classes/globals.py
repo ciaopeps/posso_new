@@ -8,6 +8,7 @@ global MODEL_CKPT
 global TITLE
 global ARTICLE
 global IMAGE
+global DATE
 
 
 
@@ -52,4 +53,4 @@ DOMAIN_STYLE_TO_COPY = 'www.ft.com'
 
 TITLE = []
 ARTICLE = []
-D = {}
+DATE = {}

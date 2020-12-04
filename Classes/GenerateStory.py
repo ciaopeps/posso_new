@@ -4,15 +4,18 @@ import random
 import os
 import requests
 # import argparse
+from datetime import date
 
 def to_app():
     print('to app')
     title, article = send_story()
     i = random.randint(1, 11)
     image = "static/img/home/home" + str(i) + ".jpg"
+    published_at = date.today()
     IMAGE_TO_SLANDER.append(image)
     TITLE.append(title)
     ARTICLE.append(article)
+    DATE.append(published_at)
     # D[title] = article
 # def load_model():
 #

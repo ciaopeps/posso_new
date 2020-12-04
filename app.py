@@ -15,7 +15,7 @@ scheduler.start()
 @app.route('/')
 def home():
     # k = [TITLE,ARTICLE]
-    return render_template('home-page_demo.html',t=TITLE,a=ARTICLE,i=IMAGE_TO_SLANDER)
+    return render_template('home-page_demo.html',t=TITLE,a=ARTICLE,i=IMAGE_TO_SLANDER,d=DATE)
 
 @app.template_global(name='zip')
 def _zip(*args, **kwargs): #to not overwrite builtin zip in globals

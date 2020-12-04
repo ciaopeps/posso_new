@@ -82,7 +82,7 @@
 
       <!--Section: Jumbotron-->
             <!--Excerpt-->
-            {% for key, value, image in zip(t,a,i) | reverse %}
+            {% for key, value, image, date in zip(t,a,i,d) | reverse %}
             {% if loop.index0 is divisibleby 2 %}
       <hr class="my-5">
 
@@ -112,7 +112,7 @@
 
               <p>
                 <strong>
-                  <i class="far fa-clock"></i> 20/08/2018</strong>
+                  <i class="far fa-clock"></i> {{date}} </strong>
               </p>
             </div>
             <h3>
@@ -172,7 +172,7 @@
               </a>
               <p>
                 <strong>
-                  <i class="far fa-clock"></i> 20/08/2018</strong>
+                  <i class="far fa-clock"></i>{{date}}</strong>
               </p>
             </div>
             <h3>
