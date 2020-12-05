@@ -6,13 +6,13 @@ import requests
 # import argparse
 from datetime import date
 
-def initialize_variables():
-    TITLE = []
-    ARTICLE = []
-    IMAGE_TO_SLANDER = []
-    DATE = []
+
 
 def to_app():
+    TITLE = list()
+    ARTICLE = list()
+    IMAGE_TO_SLANDER = list()
+    DATE = list()
     print('to app')
     title, article = send_story()
     i = random.randint(1, 11)
@@ -22,6 +22,7 @@ def to_app():
     TITLE.append(title)
     ARTICLE.append(article)
     DATE.append(published_at)
+
     # D[title] = article
 # def load_model():
 #
