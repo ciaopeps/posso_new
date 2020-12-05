@@ -6,6 +6,12 @@ import requests
 # import argparse
 from datetime import date
 
+def initialize_variables():
+    TITLE = []
+    ARTICLE = []
+    IMAGE_TO_SLANDER = []
+    DATE = []
+
 def to_app():
     print('to app')
     title, article = send_story()
