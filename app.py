@@ -6,9 +6,9 @@ print('it works!')
 app = Flask(__name__)
 
 scheduler = BackgroundScheduler()
-scheduler.add_job(func=to_app, trigger='interval', hours=3, start_date='2020-12-05 02:35:00', end_date='2100-06-15 09:05:00')
-scheduler.add_job(func=to_app, trigger='interval', hours=3, start_date='2020-12-05 02:36:00', end_date='2100-06-15 09:05:00')
-scheduler.add_job(func=to_app, trigger='interval', hours=3, start_date='2020-12-05 02:36:01', end_date='2100-06-15 11:00:00')
+scheduler.add_job(func=initialize_variables, trigger='interval', hours=3, start_date='2020-12-05 02:36:30', end_date='2100-06-15 09:05:00')
+scheduler.add_job(func=to_app, trigger='interval', hours=3, start_date='2020-12-05 02:37:00', end_date='2100-06-15 09:05:00')
+scheduler.add_job(func=to_app, trigger='interval', hours=3, start_date='2020-12-05 02:37:01', end_date='2100-06-15 11:00:00')
 
 scheduler.start()
 
