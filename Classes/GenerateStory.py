@@ -9,10 +9,6 @@ from datetime import date
 
 
 def to_app():
-    TITLE = list()
-    ARTICLE = list()
-    IMAGE_TO_SLANDER = list()
-    DATE = list()
     print('to app')
     title, article = send_story()
     i = random.randint(1, 11)
