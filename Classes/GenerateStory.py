@@ -11,7 +11,7 @@ from datetime import date
 def to_app():
     print('to app')
     title, article = send_story()
-    i = random.randint(1, 11)
+    i = random.randint(1, 24)
     image = "static/img/home/home" + str(i) + ".jpg"
     published_at = date.today()
     IMAGE_TO_SLANDER.append(image)

@@ -78,21 +78,18 @@
 
   <!--Main layout-->
   <main class="mt-5 pt-5">
-
     <div class="container">
 
-
+      </section>
       <!--Section: Jumbotron-->
-            <!--Excerpt-->
-            {% for t, a, i, d in published | reverse %}
-            {% if loop.index0 is divisibleby 2 %}
+
       <hr class="my-5">
 
       <!--Section: Magazine v.1-->
-      <section class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+      <section class="wow fadeIn">
 
         <!--Section heading-->
-        <h2 class="h1 text-center my-5 font-weight-bold"></h2>
+        <h2 class="h1 text-center my-5 font-weight-bold">NewsFeed</h2>
 
         <!--Grid row-->
         <div class="row text-left">
@@ -102,27 +99,26 @@
 
             <!--Image-->
             <div class="view overlay rounded z-depth-1-half mb-3">
-              <img src={{i}} class="img-fluid" alt="Sample post image">
+              <img src={{ published[-1][0] }} class="img-fluid" alt="Sample post image">
               <a>
-                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                <div class="mask rgba-white-slight"></div>
               </a>
             </div>
 
-
-
+            <!--Excerpt-->
             <div class="news-data">
-
               <p>
                 <strong>
-                  <i class="far fa-clock"></i> {{d}} </strong>
+                  <i class="far fa-clock"></i> {{published[-1][1]}} </strong>
               </p>
             </div>
             <h3>
               <a>
-                <strong style="text-align:justify">{{ t }}</strong>
+                <strong>{{ published[-1][2] }}</strong>
               </a>
             </h3>
-            <p style="text-align:justify">{{ a }}</p>
+            <p> {{ published[-1][3] }}  </p>
+
 
             <!--/Featured news-->
 
@@ -130,63 +126,200 @@
 
             <!--Small news-->
             <div class="row">
+              <div class="col-md-3">
 
+                <!--Image-->
+                <div class="view overlay rounded z-depth-1">
+                  <img src= {{ published[-3][0] }} class="img-fluid" alt="Minor sample post image">
+                  <a>
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+              </div>
 
               <!--Excerpt-->
-
+              <div class="col-md-9">
+                <p class="dark-grey-text">
+                  <strong> {{ published[-3][1] }} </strong>
+                </p>
+                <a> {{ published[-3][2] }}
+                  <i class="fas fa-angle-right float-right"></i>
+                </a>
+              </div>
 
             </div>
             <!--/Small news-->
 
-
+            <hr>
 
             <!--Small news-->
+            <div class="row">
+              <div class="col-md-3">
 
+                <!--Image-->
+                <div class="view overlay rounded z-depth-1">
+                  <img src= {{ published[-5][0] }} class="img-fluid" alt="Minor sample post image">
+                  <a>
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+              </div>
+
+              <!--Excerpt-->
+              <div class="col-md-9">
+                <p class="dark-grey-text">
+                  <strong> {{ published[-5][1] }} </strong>
+                </p>
+                <a> {{ published[-5][2] }}
+                  <i class="fas fa-angle-right float-right"></i>
+                </a>
+              </div>
+
+            </div>
             <!--/Small news-->
 
-
+            <hr>
 
             <!--Small news-->
+            <div class="row">
+              <div class="col-md-3">
 
+                <!--Image-->
+                <div class="view overlay rounded z-depth-1">
+                  <img src={{ published[-7][0] }} class="img-fluid" alt="Minor sample post image">
+                  <a>
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+              </div>
+
+              <!--Excerpt-->
+              <div class="col-md-9">
+                <p class="dark-grey-text">
+                  <strong>{{ published[-7][1] }}</strong>
+                </p>
+                <a> {{ published[-7][2] }}
+                  <i class="fas fa-angle-right float-right"></i>
+                </a>
+              </div>
+
+            </div>
             <!--/Small news-->
 
           </div>
           <!--Grid column-->
-          {% else %}
+
           <!--Grid column-->
+<!--          {if loop.index0 is not divisibleby 2}-->
           <div class="col-lg-6 col-md-12">
 
             <!--Image-->
             <div class="view overlay rounded z-depth-1-half mb-3">
-              <img src= {{i}} class="img-fluid" alt="Sample post image">
+              <img src= {{ published[-2][0] }} class="img-fluid" alt="Sample post image">
               <a>
-                <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                <div class="mask rgba-white-slight"></div>
               </a>
             </div>
 
             <!--Excerpt-->
             <div class="news-data">
-              <a href="" class="light-blue-text">
-                <h6>
-
-
-                </h6>
-              </a>
               <p>
                 <strong>
-                  <i class="far fa-clock"></i>{{d}}</strong>
+                  <i class="far fa-clock"></i> {{ published[-2][1] }} </strong>
               </p>
             </div>
             <h3>
               <a>
-                <strong style="text-align:justify"> {{ t }}</strong>
+                <strong> {{ published[-2][2] }} </strong>
               </a>
             </h3>
-            <p style="text-align:justify">{{ a }}</p>
-    {% endif %}
-    {% endfor %}
+            <p> {{ published[-2][3] }}  </p>
 
+            <!--/Featured news-->
 
+            <hr>
+
+            <!--Small news-->
+            <div class="row">
+              <div class="col-md-3">
+
+                <!--Image-->
+                <div class="view overlay rounded z-depth-1">
+                  <img src={{ published[-4][0] }} class="img-fluid" alt="Minor sample post image">
+                  <a>
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+              </div>
+
+              <!--Excerpt-->
+              <div class="col-md-9">
+                <p class="dark-grey-text">
+                  <strong>{{ published[-4][1] }}</strong>
+                </p>
+                <a> {{ published[-4][2] }}
+                  <i class="fas fa-angle-right float-right"></i>
+                </a>
+              </div>
+
+            </div>
+            <!--/Small news-->
+
+            <hr>
+
+            <!--Small news-->
+            <div class="row">
+              <div class="col-md-3">
+
+                <!--Image-->
+                <div class="view overlay rounded z-depth-1">
+                  <img src= {{ published[-6][0] }} class="img-fluid" alt="Minor sample post image">
+                  <a>
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+              </div>
+
+              <!--Excerpt-->
+              <div class="col-md-9">
+                <p class="dark-grey-text">
+                  <strong>{{ d }}</strong>
+                </p>
+                <a>{{ published[-6][0] }}
+                  <i class="fas fa-angle-right float-right"></i>
+                </a>
+              </div>
+
+            </div>
+            <!--/Small news-->
+
+            <hr>
+
+            <!--Small news-->
+            <div class="row">
+              <div class="col-md-3">
+
+                <!--Image-->
+                <div class="view overlay rounded z-depth-1">
+                  <img src={{ published[-8][0] }} class="img-fluid" alt="Minor sample post image">
+                  <a>
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+              </div>
+
+              <!--Excerpt-->
+              <div class="col-md-9">
+                <p class="dark-grey-text">
+                  <strong>{{ published[-8][1] }}</strong>
+                </p>
+                <a>{{ published[-8][2] }}
+                  <i class="fas fa-angle-right float-right"></i>
+                </a>
+              </div>
+
+            </div>
+            <!--/Small news-->
 
           </div>
           <!--Grid column-->
@@ -196,13 +329,15 @@
 
       </section>
       <!--/Section: Magazine v.1-->
-
+      <br>
+      <br>
+      <br>
 
     </div>
 
   </main>
-  <!--Main layout-->
- <!--Footer-->
+<!--  Main layout-->
+
    <footer class="page-footer fixed-bottom text-center font-small mdb-color darken-2 mt-4 wow fadeIn">
 
                     <p style="text-align:justify">
