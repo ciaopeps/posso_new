@@ -23,6 +23,8 @@ def home():
     published = list(zip(IMAGE_TO_SLANDER,DATE,TITLE,ARTICLE))
     if len(published) == 8:
         return render_template('home-page_demo.html',type=type,published = published )
+    else:
+        return render_template('home-page_demo.html')
 
 @app.template_global(name='zip')
 def _zip(*args, **kwargs): #to not overwrite builtin zip in globals
