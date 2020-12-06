@@ -6,14 +6,14 @@ print('it works!')
 app = Flask(__name__)
 
 scheduler = BackgroundScheduler()
-scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-06 01:16:01', end_date='2100-06-15 09:05:00')
-scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-06 01:16:02', end_date='2100-06-15 09:05:00')
-scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-06 01:16:03', end_date='2100-06-15 11:00:00')
-scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-06 01:16:04', end_date='2100-06-15 09:05:00')
-scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-06 01:16:05', end_date='2100-06-15 09:05:00')
-scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-06 01:16:06', end_date='2100-06-15 09:05:00')
-scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-06 01:16:07', end_date='2100-06-15 11:00:00')
-scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-06 01:16:08', end_date='2100-06-15 09:05:00')
+scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-06 01:20:01', end_date='2100-06-15 09:05:00')
+scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-06 01:20:02', end_date='2100-06-15 09:05:00')
+scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-06 01:20:03', end_date='2100-06-15 11:00:00')
+scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-06 01:20:04', end_date='2100-06-15 09:05:00')
+scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-06 01:20:05', end_date='2100-06-15 09:05:00')
+scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-06 01:20:06', end_date='2100-06-15 09:05:00')
+scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-06 01:20:07', end_date='2100-06-15 11:00:00')
+scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-06 01:20:08', end_date='2100-06-15 09:05:00')
 
 scheduler.start()
 
@@ -24,7 +24,7 @@ def home():
     if len(published) == 8:
         return render_template('home-page_demo.html',type=type,published = published )
     else:
-        return render_template('home-page_demo.html')
+        return render_template('popup.html')
 
 @app.template_global(name='zip')
 def _zip(*args, **kwargs): #to not overwrite builtin zip in globals
