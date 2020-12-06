@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>posso - news manipulation</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="/static/css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="/static/css/style.css" rel="stylesheet">
+  <style type="text/css">/* Chart.js */
+  @-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}
+  </style>
+</head>
+
+<body>
+
+  <!--Main Navigation-->
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+
+      <div class="container">
+
+        <!-- Brand -->
+        <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
+<!--          <strong class="blue-text">MDB</strong>-->
+          <img src="/static/img/logo.png" width="100px" height="100px">
+        </a>
+
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <!-- Left -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link waves-effect" href="" target="_blank">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect" href="" target="_blank">the project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect" href="" target="_blank"></a>
+            </li>
+          </ul>
+
+          <!-- Right -->
+          <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+              <a href="https://www.medium.com/@pietro.aluffi" class="nav-link waves-effect" target="_blank">
+                <i class="fab fa-medium fa-2x"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://github.com/ciaopeps" class="nav-link waves-effect" target="_blank">
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="mt-5 pt-5">
+    <div class="container">
+
+      </section>
+      <!--Section: Jumbotron-->
+
+      <hr class="my-5">
+
+      <!--Section: Magazine v.1-->
+      <section class="wow fadeIn">
+
+        <!--Section heading-->
+        <h2 class="h1 text-center my-5 font-weight-bold">NewsFeed</h2>
+
+        <!--Grid row-->
+        <div class="row text-left">
+
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12">
+          {% if published[-1]  is defined%}
+            <!--Image-->
+            <div class="view overlay rounded z-depth-1-half mb-3">
+              <img src={{ published[-1][0] }} class="img-fluid" alt="Sample post image">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+
+            <!--Excerpt-->
+            <div class="news-data">
+              <p>
+                <strong>
+                  <i class="far fa-clock"></i> {{published[-1][1]}} </strong>
+              </p>
+            </div>
+            <h3>
+              <a>
+                <strong>{{ published[-1][2] }}</strong>
+              </a>
+            </h3>
+<!--            <p style="text-align: justify"> {{ published[-1][3][10] }}  </p>-->
+<!--            <p class="text"-->
+                <p class="text" style="text-align: justify"> {{ published[-1][3][:600] }} <span class="dots"> ...</span> <span class="moreText"> {{ published[-1][3][600:] }}</span></p>
+                <button class="read-more-btn">Read More</button>
+            {%endif%}
+
+
+              </div>
+
+            </div>
+            <!--/Small news-->
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+      </section>
+      <!--/Section: Magazine v.1-->
+      <br>
+      <br>
+      <br>
+
+    </div>
+
+  </main>
+<!--  Main layout-->
+
+   <footer class="page-footer fixed-bottom text-center font-small mdb-color darken-2 mt-4 wow fadeIn">
+
+                    <p style="text-align:justify">
+                    Text in this website is generated by Artificial Intelligence as a demonstration of the capabilities of today's technology and how fake content can be mass produced.
+                    Except for this disclaimer everything you see is machine-generated and there is no human interaction.
+                    </p>
+
+
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="/static/js/readmore.js"></script>
+  <script type="text/javascript" src="/static/js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="/static/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="/static/js/mdb.min.js"></script><div class="hiddendiv common"></div>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+
+  </script>
+
+
+</body></html>

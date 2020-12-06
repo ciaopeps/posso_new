@@ -11,7 +11,7 @@
   <!-- Material Design Bootstrap -->
   <link href="/static/css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
-  <link href="/static/css/style.min.css" rel="stylesheet">
+  <link href="/static/css/style.css" rel="stylesheet">
   <style type="text/css">/* Chart.js */
   @-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}
   </style>
@@ -117,7 +117,9 @@
                 <strong>{{ published[-1][2] }}</strong>
               </a>
             </h3>
-            <p style="text-align: justify"> {{ published[-1][3] }}  </p>
+            <p class="text" style="text-align: justify"> {{ published[-1][3][:600] }} <span class="dots"> ...</span> <span class="moreText"> {{ published[-1][3][600:] }}</span></p>
+                <button class="read-more-btn">Read More</button>
+            <br>
             {%endif%}
             {% if published[-3] is defined%}
 
@@ -149,6 +151,7 @@
 
             </div>
             <!--/Small news-->
+          <br>
           {%endif%}
 
             <!--Small news-->
@@ -175,6 +178,7 @@
               </div>
 
             </div>
+            <br>
             {%endif%}
             <!--/Small news-->
 
@@ -204,6 +208,7 @@
 
             </div>
             <!--/Small news-->
+          <br>
           {%endif%}
           </div>
           <!--Grid column-->
@@ -232,11 +237,12 @@
                 <strong> {{ published[-2][2] }} </strong>
               </a>
             </h3>
-            <p style="text-align: justify"> {{ published[-2][3] }}  </p>
+            <p class="text" style="text-align: justify"> {{ published[-2][3][:600] }} <span class="dots"> ...</span> <span class="moreText"> {{ published[-1][3][600:] }}</span></p>
+                <button class="read-more-btn">Read More</button>
 
             <!--/Featured news-->
+          <br>
           {%endif%}
-            <hr>
             {% if published[-4] is defined%}
             <!--Small news-->
             <div class="row">
@@ -263,6 +269,7 @@
 
             </div>
             <!--/Small news-->
+          <br>
           {%endif%}
             {% if published[-6] is defined%}
 
@@ -291,6 +298,7 @@
 
             </div>
             <!--/Small news-->
+            <br>
             {%endif%}
             {% if published[-8] is defined%}
             <!--Small news-->
@@ -318,6 +326,7 @@
 
             </div>
             <!--/Small news-->
+            <br>
             {%endif%}
           </div>
           <!--Grid column-->
@@ -349,7 +358,7 @@
 
   <!-- SCRIPTS -->
   <!-- JQuery -->
-  <script src="/static/js/popup.js"></script>
+  <script type="text/javascript" src="/static/js/readmore.js"></script>
   <script type="text/javascript" src="/static/js/jquery-3.4.1.min.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="/static/js/popper.min.js"></script>
