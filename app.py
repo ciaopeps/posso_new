@@ -6,10 +6,14 @@ print('it works!')
 app = Flask(__name__)
 
 scheduler = BackgroundScheduler()
-scheduler.add_job(func=to_app, trigger='interval', hours=3, start_date='2020-12-05 12:45:01', end_date='2100-06-15 09:05:00')
-scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-05 12:45:02', end_date='2100-06-15 09:05:00')
-scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-05 12:45:03', end_date='2100-06-15 11:00:00')
-scheduler.add_job(func=to_app, trigger='interval', hours=3, start_date='2020-12-05 12:45:04', end_date='2100-06-15 09:05:00')
+scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-06 01:15:01', end_date='2100-06-15 09:05:00')
+scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-06 01:15:02', end_date='2100-06-15 09:05:00')
+scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-06 01:15:03', end_date='2100-06-15 11:00:00')
+scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-06 01:15:04', end_date='2100-06-15 09:05:00')
+scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-06 01:15:05', end_date='2100-06-15 09:05:00')
+scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-06 01:15:06', end_date='2100-06-15 09:05:00')
+scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-06 01:15:07', end_date='2100-06-15 11:00:00')
+scheduler.add_job(func=to_app, trigger='interval', hours=24, start_date='2020-12-06 01:15:08', end_date='2100-06-15 09:05:00')
 
 scheduler.start()
 
