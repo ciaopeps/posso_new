@@ -20,7 +20,7 @@ def get_random_string(length):
 
 def send_story():
     # article_title = get_random_string(8)
-    # article_text = get_random_string(50)
+    # article_text = get_random_string(1000)
     # return article_title,article_text
     print('starting making a story-------------------------------------------')
     ms = MakeStory()
@@ -106,4 +106,3 @@ def send_story():
             print((article_date),'--------------')
 
             return article_title, article_text
-    #

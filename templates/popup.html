@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,9 +17,10 @@
   </style>
 </head>
 
-<body class="grey lighten-3">
+<body>
 
-      <header>
+  <!--Main Navigation-->
+  <header>
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
 
@@ -72,97 +74,61 @@
     <!-- Navbar -->
 
   </header>
+  <!--Main Navigation-->
 
-    <!--Main layout-->
-    <main class="mt-5 pt-5">
-        <div class="container">
+  <!--Main layout-->
+  <main class="mt-5 pt-5">
+    <div class="container">
 
-            <!--Section: Post-->
-            <section class="mt-4">
+      </section>
+      <!--Section: Jumbotron-->
+      <!--Section: Magazine v.1-->
+      <section class="wow fadeIn">
+        <!--Grid row-->
+        <div class="row text-left">
 
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12 mb-5">
-
-                        <!--Featured Image-->
-                        <div class="card mb-4 wow fadeIn">
-
-<!--                            <img src={{article[0]}} class="img-fluid" alt="">-->
-
-                        <!--/.Featured Image-->
-
-                        <!--Card-->
-
-                            <!--Card content-->
+          <!--Grid column-->
+          <div class="md-lg-6 md-12">
 
 
-                        <!--/.Card-->
+            <!--Excerpt-->
+            <div class="news-data">
+              <p>
+                <strong>
+                  <i class="far fa-clock"></i> {{article[1]}} </strong>
+              </p>
+            </div>
+            <h3>
+              <a >
+                <strong id="align"> {{ article[2] }}</strong>
+              </a>
+            </h3>
+            <p class="text" style="text-align: justify"> {{ article[3] }} </p>
+                        <!--Image-->
+            <div class="view overlay rounded z-depth-1-half small">
+              <img src={{ article[0] }} class="img-fluid" alt="Sample post image">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
 
-                        <!--Card-->
-                            <br>
-                            <div class="news-data">
-                              <p>
-                                <strong>
-                                  <i class="far fa-clock"></i> {{article[1]}} </strong>
-                                  <p class="h5 my-4"> {{article[2]}}</p>
-                              </p>
-                            </div>
-                            <!--Card content-->
-                            <div class="card-body">
-
-
-                                <p>{{article[3]}}</p>
-
-                            </div>
-
-                        </div>
-                        <!--/.Card-->
-
-                        <!--Card-->
-                        <div class="card mb-4 wow fadeIn">
-
-
-
-                            <!--Card content-->
-
-
-                        </div>
-                        <!--/.Card-->
-
-                        <!--Comments-->
-                        <div class="card card-comments mb-3 wow fadeIn">
-
-
-                        </div>
-                        <!--/.Comments-->
-
-                        <!--Reply-->
-                        <div class="card mb-3 wow fadeIn">
-
-
-                        </div>
-                        <!--/.Reply-->
-
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-            </section>
-            <!--Section: Post-->
+          </div>
+          <!--Grid column-->
 
         </div>
-    </main>
-    <!--Main layout-->
-    <br>
-    <br>
+        <!--Grid row-->
+
+      </section>
+      <!--/Section: Magazine v.1-->
+      <br>
+      <br>
+      <br>
+
+    </div>
+
+  </main>
+<!--  Main layout-->
+
    <footer class="page-footer fixed-bottom text-center font-small mdb-color darken-2 mt-4 wow fadeIn">
 
                     <p style="text-align:justify">
@@ -176,7 +142,7 @@
 
   <!-- SCRIPTS -->
   <!-- JQuery -->
-  <script type="text/javascript" src="/static/js/readmore.js"></script>
+<!--  <script type="text/javascript" src="/static/js/readmore.js"></script>-->
   <script type="text/javascript" src="/static/js/jquery-3.4.1.min.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="/static/js/popper.min.js"></script>
@@ -193,6 +159,3 @@
 
 
 </body></html>
-
-
-<script>mendeleyWebImporter = { open: function () { window.postMessage('0.6970104102626773', 'http://127.0.0.1:5000') } }</script><script>mendeleyWebImporter = { open: function () { window.postMessage('0.18531127002498593', 'http://127.0.0.1:5000') } }</script><script>mendeleyWebImporter = { open: function () { window.postMessage('0.5242247700809177', 'http://127.0.0.1:5000') } }</script><script>mendeleyWebImporter = { open: function () { window.postMessage('0.2399701538405572', 'http://127.0.0.1:5000') } }</script></body></html>
