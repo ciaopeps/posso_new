@@ -119,7 +119,7 @@
             </h3>
             <p class="text" style="text-align: justify"> {{ published[-1][3][:600] }} <span class="dots"> ...</span> <span class="moreText"> {{ published[-1][3][600:] }}</span></p>
 <!--                <button class="read-more-btn">Read More</button>-->
-            <form action="/article" method="POST" ><button class="read-more-btn" type="submit" name="list" value= {{published[-1][0]}}_-_{{published[-1][1]}}_-_{{published[-1][2]}}_-_{{published[-1][3]}} ><span class="glyphicon glyphicon-trash"></span> Read More </button> </form>
+            <form action="/article" method="POST" ><button class="read-more-btn" type="submit" name="list" value= {{-1}} ><span class="glyphicon glyphicon-trash"></span> Read More </button> </form>
 
             <br>
 
@@ -148,7 +148,7 @@
                   <strong> {{ published[-3][1] }} </strong>
                 </p>
                 <a>
-                  <form action="/article" method="POST" ><button class="read-more-btn" type="submit" name="list" value= {{published[-3][0]}}_-_{{published[-3][1]}}_-_{{published[-3][2]}}_-_{{published[-3][3]}} ><span class="glyphicon glyphicon-trash"></span> {{ published[-3][2] }}</button> </form>
+                  <form action="/article" method="POST" ><button class="read-more-btn" type="submit" name="list" value= {{-3}} ><span class="glyphicon glyphicon-trash"></span> {{ published[-3][2] }}</button> </form>
 
                   <i class="fas fa-angle-right float-right"></i>
                 </a>
@@ -178,7 +178,7 @@
                   <strong> {{ published[-5][1] }} </strong>
                 </p>
                 <a>
-                  <form action="/article" method="POST" ><button class="read-more-btn" type="submit" name="list" value= {{published[-5][0]}}_-_{{published[-5][1]}}_-_{{published[-5][2]}}_-_{{published[-5][3]}} ><span class="glyphicon glyphicon-trash"></span> {{ published[-5][2] }}</button> </form>
+                  <form action="/article" method="POST" ><button class="read-more-btn" type="submit" name="list" value= {{-5}} ><span class="glyphicon glyphicon-trash"></span> {{ published[-5][2] }}</button> </form>
 
                   <i class="fas fa-angle-right float-right"></i>
                 </a>
@@ -209,7 +209,7 @@
                   <strong>{{ published[-7][1] }}</strong>
                 </p>
                 <a>
-                <form action="/article" method="POST" ><button class="read-more-btn" type="submit" name="list" value= {{published[-7][0]}}_-_{{published[-7][1]}}_-_{{published[-7][2]}}_-_{{published[-7][3]}} ><span class="glyphicon glyphicon-trash"></span> {{ published[-7][2] }}</button> </form>
+                <form action="/article" method="POST" ><button class="read-more-btn" type="submit" name="list" value= {{-7}} ><span class="glyphicon glyphicon-trash"></span> {{ published[-7][2] }}</button> </form>
 
                   <i class="fas fa-angle-right float-right"></i>
                 </a>
@@ -248,7 +248,7 @@
             </h3>
             <p class="text" style="text-align: justify"> {{ published[-2][3][:600] }} <span class="dots"> ...</span> <span class="moreText"> {{ published[-2][3][600:] }}</span></p>
 <!--            <button class="read-more-btn">Read More</button>-->
-            <form action="/article" method="POST" ><button class="read-more-btn" type="submit" name="list" value= {{published[-2][0]}}_-_{{published[-2][1]}}_-_{{published[-2][2]}}_-_{{published[-2][3]}} ><span class="glyphicon glyphicon-trash"></span> Read More </button> </form>
+            <form action="/article" method="POST" ><button class="read-more-btn" type="submit" name="list" value= {{-2}} ><span class="glyphicon glyphicon-trash"></span> Read More </button> </form>
 
 
             <!--/Featured news-->
@@ -274,7 +274,7 @@
                   <strong>{{ published[-4][1] }}</strong>
                 </p>
                 <a>
-                <form action="/article" method="POST" ><button class="read-more-btn" type="submit" name="list" value= {{published[-4][0]}}_-_{{published[-4][1]}}_-_{{published[-4][2]}}_-_{{published[-4][3]}} ><span class="glyphicon glyphicon-trash"></span> {{ published[-4][2] }}</button> </form>
+                <form action="/article" method="POST" ><button class="read-more-btn" type="submit" name="list" value= {{-4}} ><span class="glyphicon glyphicon-trash"></span> {{ published[-4][2] }}</button> </form>
 
                   <i class="fas fa-angle-right float-right"></i>
                 </a>
@@ -306,7 +306,7 @@
                   <strong>{{ published[-6][1] }}</strong>
                 </p>
                 <a>
-                  <form action="/article" method="POST" ><button class="read-more-btn" type="submit" name="list" value= {{published[-6][0]}}_-_{{published[-6][1]}}_-_{{published[-6][2]}}_-_{{published[-6][3]}} ><span class="glyphicon glyphicon-trash"></span> {{ published[-6][2] }}</button> </form>
+                  <form action="/article" method="POST" ><button class="read-more-btn" type="submit" name="list" value= {{-6}} ><span class="glyphicon glyphicon-trash"></span> {{ published[-6][2] }}</button> </form>
 
                   <i class="fas fa-angle-right float-right"></i>
                 </a>
@@ -336,7 +336,7 @@
                   <strong>{{ published[-8][1] }}</strong>
                 </p>
                 <a>
-                  <form action="/article" method="POST" ><button class="read-more-btn" type="submit" name="list" value= {{published[-8][0]}}_-_{{published[-8][1]}}_-_{{published[-8][2]}}_-_{{published[-8][3]}} ><span class="glyphicon glyphicon-trash"></span> {{ published[-8][2] }}</button> </form>
+                  <form action="/article" method="POST" ><button class="read-more-btn" type="submit" name="list" value= {{-7}} ><span class="glyphicon glyphicon-trash"></span> {{ published[-8][2] }}</button> </form>
 
                   <i class="fas fa-angle-right float-right"></i>
                 </a>
@@ -376,7 +376,7 @@
 
   <!-- SCRIPTS -->
   <!-- JQuery -->
-  <script type="text/javascript" src="/static/js/readmore.js"></script>
+<!--  <script type="text/javascript" src="/static/js/readmore.js"></script>-->
   <script type="text/javascript" src="/static/js/jquery-3.4.1.min.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="/static/js/popper.min.js"></script>

@@ -9,6 +9,7 @@ global TITLE
 global ARTICLE
 global IMAGE
 global DATE
+global PUBLISHED
 
 
 
@@ -50,7 +51,7 @@ RSS_FEEDS_OF_REAL_STORIES_TO_EMULATE = [
 ]
 
 DOMAIN_STYLE_TO_COPY = 'www.ft.com'
-
+PUBLISHED = []
 TITLE = []
 ARTICLE = []
 DATE = list()
