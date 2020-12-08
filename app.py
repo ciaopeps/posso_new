@@ -1,4 +1,4 @@
-from flask import Flask, render_template,request,redirect
+from flask import Flask, render_template,request
 from Classes.GenerateStory import *
 from apscheduler.schedulers.background import BackgroundScheduler
 import os
@@ -6,7 +6,7 @@ print('it works!')
 app = Flask(__name__)
 
 scheduler = BackgroundScheduler()
-scheduler.add_job(func=to_app, trigger='interval', hours=12, start_date='2020-12-08 15:13:00', end_date='2100-06-15 09:05:00')
+scheduler.add_job(func=to_app, trigger='interval', hours=12, start_date='2020-12-08 15:17:00', end_date='2100-06-15 09:05:00')
 
 
 scheduler.start()
@@ -34,11 +34,11 @@ def _zip(*args, **kwargs): #to not overwrite builtin zip in globals
     return __builtins__.zip(*args, **kwargs)
 
 #
-if __name__ == '__main__':
-    to_app()
-
-
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     # to_app()
+#
+#
+#     app.run(debug=True)
 
 
 
