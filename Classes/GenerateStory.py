@@ -20,6 +20,18 @@ def to_app():
         ARTICLE.append(article)
         DATE.append(published_at)
 
+def to_app1():
+    for i in range(6):
+        print('to app')
+        title, article = send_story1()
+        i = random.randint(1, 24)
+        image = "static/img/home/home" + str(i) + ".jpg"
+        published_at = date.today()
+        IMAGE_TO_SLANDER.append(image)
+        TITLE.append(title)
+        ARTICLE.append(article)
+        DATE.append(published_at)
+
     # D[title] = article
 # def load_model():
 #

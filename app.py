@@ -6,7 +6,7 @@ print('it works!')
 app = Flask(__name__)
 
 scheduler = BackgroundScheduler()
-scheduler.add_job(func=to_app, trigger='interval', hours=12, start_date='2020-12-08 17:27:00', end_date='2100-06-15 09:05:00')
+scheduler.add_job(func=to_app, trigger='interval', hours=12, start_date='2020-12-09 10:00:00', end_date='2100-06-15 09:05:00')
 
 
 
@@ -37,9 +37,9 @@ def article():
 def _zip(*args, **kwargs): #to not overwrite builtin zip in globals
     return __builtins__.zip(*args, **kwargs)
 
-
+#
 # if __name__ == '__main__':
-#     to_app()
+#     to_app1()
 #
 #
 #     app.run(debug=True)

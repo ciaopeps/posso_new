@@ -19,9 +19,6 @@ def get_random_string(length):
 
 
 def send_story():
-    # article_title = get_random_string(8)
-    # article_text = get_random_string(1000)
-    # return article_title,article_text
     print('starting making a story-------------------------------------------')
     ms = MakeStory()
     articles = []
@@ -82,7 +79,7 @@ def send_story():
                     # If the Grover model never manages to generate a good article about the target victim,
                     # give up after 10 tries so we don't get stuck in an infinite loop
                     attempts += 1
-                    if attempts > 10:
+                    if attempts > 50:
                         continue
             # If the headline was scraped from an RSS feed, we can just blindly generate an article
             else:
@@ -106,3 +103,8 @@ def send_story():
             print((article_date),'--------------')
 
             return article_title, article_text
+
+def send_story1():
+    article_title = get_random_string(8)
+    article_text = get_random_string(1000)
+    return article_title,article_text

@@ -95,6 +95,7 @@
         <div class="row text-left">
 
           <!--Grid column-->
+          <a>
           <div class="col-lg-6 col-md-12">
           {% if published[-1]  is defined%}
             <!--Image-->
@@ -124,6 +125,7 @@
             <br>
 
             {%endif%}
+
             {% if published[-3] is defined%}
 
             <!--/Featured news-->
@@ -150,7 +152,7 @@
                 <a>
                   <form action="/article" method="POST" ><button class="read-more-btn" type="submit" name="list" value= {{-3}} ><span class="glyphicon glyphicon-trash"></span> {{ published[-3][2] }}</button> </form>
 
-                  <i class="fas fa-angle-right float-right"></i>
+<!--                  <i class="fas fa-angle-right float-right"></i>-->
                 </a>
               </div>
 
@@ -180,7 +182,7 @@
                 <a>
                   <form action="/article" method="POST" ><button class="read-more-btn" type="submit" name="list" value= {{-5}} ><span class="glyphicon glyphicon-trash"></span> {{ published[-5][2] }}</button> </form>
 
-                  <i class="fas fa-angle-right float-right"></i>
+<!--                  <i class="fas fa-angle-right float-right"></i>-->
                 </a>
               </div>
 
@@ -211,7 +213,7 @@
                 <a>
                 <form action="/article" method="POST" ><button class="read-more-btn" type="submit" name="list" value= {{-7}} ><span class="glyphicon glyphicon-trash"></span> {{ published[-7][2] }}</button> </form>
 
-                  <i class="fas fa-angle-right float-right"></i>
+<!--                  <i class="fas fa-angle-right float-right"></i>-->
                 </a>
               </div>
 
@@ -276,7 +278,7 @@
                 <a>
                 <form action="/article" method="POST" ><button class="read-more-btn" type="submit" name="list" value= {{-4}} ><span class="glyphicon glyphicon-trash"></span> {{ published[-4][2] }}</button> </form>
 
-                  <i class="fas fa-angle-right float-right"></i>
+<!--                  <i class="fas fa-angle-right float-right"></i>-->
                 </a>
               </div>
 
@@ -308,7 +310,7 @@
                 <a>
                   <form action="/article" method="POST" ><button class="read-more-btn" type="submit" name="list" value= {{-6}} ><span class="glyphicon glyphicon-trash"></span> {{ published[-6][2] }}</button> </form>
 
-                  <i class="fas fa-angle-right float-right"></i>
+<!--                  <i class="fas fa-angle-right float-right"></i>-->
                 </a>
               </div>
 
@@ -338,7 +340,7 @@
                 <a>
                   <form action="/article" method="POST" ><button class="read-more-btn" type="submit" name="list" value= {{-7}} ><span class="glyphicon glyphicon-trash"></span> {{ published[-8][2] }}</button> </form>
 
-                  <i class="fas fa-angle-right float-right"></i>
+<!--                  <i class="fas fa-angle-right float-right"></i>-->
                 </a>
               </div>
 
